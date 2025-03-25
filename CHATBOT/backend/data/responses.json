@@ -1,0 +1,85 @@
+{
+  "greeting": [
+  { "text": "Hello! How can I help you today?" },
+  { "text": "Hi there! What can I do for you?" },
+  { "text": "Hey! How’s it going?" },
+  { "text": "Yo! What’s up?" },
+  { "text": "Good to see you! How may I assist?" },
+  { "text": "Howdy! Need any help today?" }
+],
+  "farewell": [
+  { "text": "Goodbye! Have a great day!" },
+  { "text": "See you later! Come back anytime." },
+  { "text": "Farewell! It was nice chatting with you." },
+  { "text": "Take care! Until next time." },
+  { "text": "Bye-bye! Don't be a stranger." }
+],
+  "thanks": [
+    { "text": "You're welcome!" },
+    { "text": "Happy to help!" },
+    { "text": "No problem at all!" },
+    { "text": "Always here if you need me!" },
+    { "text": "Glad I could assist!" }
+  ],
+  "help": [
+  { "text": "I can help you with several things! Ask me about the weather, time, jokes, facts, or just chat with me." },
+  { "text": "I'm a chatbot that can tell you the weather, time, jokes, facts, and have a basic conversation. How can I assist you today?" },
+  { "text": "Sure! Let me know what you need help with." }
+],
+  "weather_query": [
+    {
+      "text": "Let me check that for you! ${weather_info}",
+      "conditions": [
+        {
+          "entity_present": ["location"],
+          "text": "Currently, I can't fetch real-time weather, but if I could, I'd tell you the weather in ${location}."
+        }
+      ]
+    },
+    {
+      "text": "Could you specify a location? That way, I can fetch weather data for you."
+    }
+  ],
+  "weather_forecast": [
+    { "text": "I currently can't predict the weather, but if I could, I’d give you tomorrow's forecast!" }
+  ],
+  "time_query": [
+    {
+      "text": "The current time is {current_time}.",
+      "generate_response": true
+    }
+  ],
+  "name_query": [
+    { "text": "I'm ChattyBot, your friendly assistant!" },
+    { "text": "My name is ChattyBot! How can I assist you today?" }
+  ],
+  "introduce_user": [
+    {
+      "text": "Nice to meet you, ${user_name}! How can I assist you today?",
+      "set_state": { "user_name": "${user_name}" }
+    }
+  ],
+  "confirm_name": [
+    { "text": "Great! I'll remember your name, ${user_name}." }
+  ],
+  "deny_name": [
+    { "text": "I apologize for the misunderstanding. What is your name?" }
+  ],
+  "joke_request": [
+    { "text": "Why don’t scientists trust atoms? Because they make up everything!" },
+    { "text": "Why did the scarecrow win an award? Because he was outstanding in his field!" },
+    { "text": "I told my wife she was drawing her eyebrows too high. She looked surprised!" },
+    { "text": "What do you call a fake noodle? An impasta!" }
+  ],
+  "fact_request": [
+    { "text": "A group of flamingos is called a 'flamboyance'." },
+    { "text": "Honey never spoils. Archaeologists found honey in Egyptian tombs that’s over 3,000 years old and still edible." },
+    { "text": "The shortest war in history was between Britain and Zanzibar in 1896. Zanzibar surrendered after 38 minutes." },
+    { "text": "A day on Venus is longer than a year on Venus. It takes 243 Earth days to rotate once, but only 225 days to orbit the Sun." }
+  ],
+  "fallback": [
+    { "text": "I'm sorry, I didn't quite get that. Could you rephrase or ask something else?" },
+    { "text": "I'm not sure what you mean. Try asking about the weather, time, jokes, or facts!" },
+    { "text": "I didn't catch that. Could you try asking in a different way?" }
+  ]
+}

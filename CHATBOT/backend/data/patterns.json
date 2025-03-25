@@ -1,0 +1,107 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "patterns": [
+        "Hello", "Hi", "Hey", "Good morning", "Good afternoon",
+        "Good evening", "Yo", "What's up?", "Howdy", "Hiya",
+        "Greetings", "Sup", "Hi bot", "Hello there", "Hey there"
+      ]
+    },
+    {
+      "intent": "farewell",
+      "patterns": [
+        "Goodbye", "Bye", "See you later", "Take care",
+        "Have a good day", "Bye bye", "Later", "Peace out",
+        "I'm out", "Catch you later", "See you soon"
+      ]
+    },
+    {
+      "intent": "thanks",
+      "patterns": [
+        "Thank you", "Thanks", "Appreciate it", "Many thanks",
+        "Thx", "Good job", "Thanks a lot", "Much appreciated",
+        "Thank you very much", "Cheers"
+      ]
+    },
+    {
+      "intent": "help",
+      "patterns": [
+        "Help", "I need help", "Can you help me?", "What can you do?",
+        "Assist me", "I have a question", "I’m stuck", "Help me out",
+        "I need assistance"
+      ]
+    },
+    {
+      "intent": "weather_query",
+      "patterns": [
+        "What's the weather like in {location}?", "Weather in {location}",
+        "How's the weather?", "What's the temperature in {location}?",
+        "Is it raining in {location}?", "Will it rain today?",
+        "Is it sunny outside?"
+      ]
+    },
+    {
+      "intent": "weather_forecast",
+      "patterns": [
+        "What about tomorrow?", "Tomorrow's forecast",
+        "Will it rain tomorrow?", "Weather for the next few days"
+      ]
+    },
+    {
+      "intent": "time_query",
+      "patterns": [
+        "What time is it?", "Can you tell me the time?", "What's the current time?",
+        "Give me the exact time.", "Tell me the time now.",
+        "What’s the time right now?", "Could you please give me the time?",
+        "I need to know the time.", "Time, please."
+      ]
+    },
+    {
+      "intent": "name_query",
+      "patterns": [
+        "What is your name?", "Who are you?", "What should I call you?",
+        "Do you have a name?", "Tell me your name"
+      ]
+    },
+    {
+      "intent": "introduce_user",
+      "patterns": [
+        "My name is {user_name}", "I am {user_name}", "Call me {user_name}",
+        "People call me {user_name}"
+      ]
+    },
+    {
+      "intent": "confirm_name",
+      "patterns": [
+        "Yes", "Yeah", "Correct", "That's right"
+      ]
+    },
+    {
+      "intent": "deny_name",
+      "patterns": [
+        "No", "Nah", "Not really"
+      ]
+    },
+    {
+      "intent": "joke_request",
+      "patterns": [
+        "Tell me a joke", "Joke", "Say something funny",
+        "Make me laugh", "Do you know any jokes?"
+      ]
+    },
+    {
+      "intent": "fact_request",
+      "patterns": [
+        "Tell me a fact", "Random fact", "Interesting fact",
+        "Give me some trivia"
+      ]
+    },
+    {
+      "intent": "fallback",
+      "patterns": [
+        ".*"
+      ]
+    }
+  ]
+}
